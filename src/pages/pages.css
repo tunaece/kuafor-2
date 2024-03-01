@@ -7,12 +7,12 @@
    @apply text-center space-y-6
 }
 .slogan{
-   @apply text-5xl  
+   @apply text-7xl  
 }
 .ara{
    transition: .2s;
-   @apply inline-flex px-3 py-1 rounded-md text-2xl border items-center
-   border-yellow-200 text-yellow-300
+   @apply inline-flex px-2 py-1 rounded-md text-2xl border-2 items-center
+   border-yellow-300 text-yellow-300 font-semibold
    space-x-2
 }
 .ara:hover{
