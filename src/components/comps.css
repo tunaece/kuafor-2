@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+.theNavbar{
+   @apply flex justify-between bg-black p-4 items-center
+   text-white z-10
+}
+.theMenu{
+   @apply space-x-4 hidden md:flex
+}
+.theLogo{
+   @apply text-4xl text-yellow-500
+}
+.hamburger-button{
+   @apply md:hidden
+}
+.hamburger{
+   @apply text-yellow-500
+}
+.mobileMenu{
+   @apply py-2 pb-10 bg-black text-white text-center  
+    w-full absolute -z-10 text-lg md:hidden
+}
+.mobileLinks{
+   @apply block
+}
+
+}

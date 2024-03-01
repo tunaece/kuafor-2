@@ -1,0 +1,25 @@
+.slider{
+   background: url(src/assets/body-painting-4696539_1280_edited.jpg);
+   @apply h-[calc(100svh-72px)] bg-cover md:bg-center text-white 
+   flex justify-center items-center
+}
+.landing{
+   @apply text-center space-y-6
+}
+.slogan{
+   @apply text-5xl  
+}
+.ara{
+   transition: .2s;
+   @apply inline-flex px-3 py-1 rounded-md text-2xl border items-center
+   border-yellow-200 bg-yellow-500 text-black
+   space-x-1
+}
+.ara:hover{
+   background-color: rgb(255, 240, 34);
+   scale: 1.07;
+}
+.ara:active{
+   background-color: rgb(177, 171, 0);
+   color: black;
+}
