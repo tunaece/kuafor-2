@@ -8,7 +8,7 @@ import { FaTiktok } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './comps.css'
 import { useState, useRef, useEffect } from "react";
 import {AnimatePresence, motion} from 'framer-motion'
@@ -50,15 +50,15 @@ return (
 <div className=" sticky top-0" ref={menuRef}>
    <nav className="block bg-black">
       <div className="theNavbar">
-      <div className='theLogo'>
-         <Link to='/' onClick={handleLogoClick}>LOGO</Link>
-      </div>
-
       <div className="hidden lg:flex space-x-10 [&>*]:hover:cursor-pointer ">
             <FaInstagram color="#df9f14" size={35} className="hover:scale-125 transition-all" />
             <FaTiktok color="#df9f14" size={30} className="hover:scale-125 transition-all"/>
             <FaYoutube color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
             <CiFacebook color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
+      </div>
+
+      <div className='theLogo'>
+         <NavLink to='/' onClick={handleLogoClick}>LOGO</NavLink>
       </div>
 
       <div className='theMenu'>
@@ -99,10 +99,9 @@ return (
                </button>
                <AnimatePresence>
                {services&&
-               <motion.div className="bg-zinc-900" 
-                  initial={{height:0,borderTop:'none',borderBottom:'none'}}
-                  animate={{height:'auto',borderTop:'1px solid white',
-                  borderBottom:'1px solid white'}}
+               <motion.div className="bg-zinc-900 border-b border-t border-yellow-500" 
+                  initial={{height:0}}
+                  animate={{height:'auto'}}
                   transition={{duration:0.1,ease:'easeOut'}} 
                   exit={{height:0,
                      transition:{delay:0.1,duration:0.1}}}
@@ -111,18 +110,18 @@ return (
                 initial={{opacity:0}} animate={{opacity:1}}
                 transition={{duration:0.1,delay:0.2}}
                 exit={{opacity:0,transition:{delay:0,duration:0.1}}}>
-                  <Link onClick={handleMenuClick} 
-                  to='/sac-islemleri'>Saç İşlemleri</Link>
-                  <Link onClick={handleMenuClick} 
-                  to='/el-ayak-islemleri' >El & Ayak İşlemleri</Link>
-                  <Link onClick={handleMenuClick} 
-                  to='/makyaj-islemleri'>Makyaj İşlemleri</Link>
-                  <Link onClick={handleMenuClick} 
-                  to='/agda-islemleri'>Ağda İşlemleri</Link>
-                  <Link onClick={handleMenuClick} 
-                  to='/gelin-saci-ve-makyajı'>Gelin Saçı ve Makyajı</Link>
-                  <Link onClick={handleMenuClick} 
-                  to='/mikro-kaynak'>Mikro Kaynak</Link>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/sac-islemleri'>Saç İşlemleri</NavLink>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/el-ayak-islemleri' >El & Ayak İşlemleri</NavLink>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/makyaj-islemleri'>Makyaj İşlemleri</NavLink>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/agda-islemleri'>Ağda İşlemleri</NavLink>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/gelin-saci-ve-makyajı'>Gelin Saçı ve Makyajı</NavLink>
+                  <NavLink onClick={handleMenuClick} 
+                  to='/mikro-kaynak'>Mikro Kaynak</NavLink>
                </motion.div>
                </motion.div>
                }

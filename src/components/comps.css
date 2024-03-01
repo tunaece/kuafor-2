@@ -51,10 +51,14 @@
    @apply flex items-center space-x-1
 }
 .desktop-serv-wrapper{
-   @apply absolute bg-gray-950 text-white  w-3/12 text-center
-    py-8 right-0 -z-10 text-2xl pb-10 border border-t-0 border-gray-600 
+   @apply bg-gray-950 text-white
+   px-8 right-0 -z-10 text-xl py-4 border-b border-gray-600 
+   hidden md:flex justify-center 
 }
 .desktopLinks{
-   @apply [&>*]:block space-y-6
+   @apply  space-x-6 [&>*:hover]:text-yellow-500
+}
+.active{
+   @apply text-yellow-300
 }
 }

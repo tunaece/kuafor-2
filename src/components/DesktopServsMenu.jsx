@@ -1,22 +1,17 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import {motion} from 'framer-motion'
 import './comps.css'
 const DesktopServsMenu = () => {
   return (
-    <motion.div className="desktop-serv-wrapper" 
-    initial={{y:-200}} animate={{y:0}} transition={{duration:0.1}}
-    exit={{y:-200,transition:{delay:0.1,duration:0.1}}}
-    > 
-      <motion.div className="desktopLinks"
-      initial={{opacity:0,y:10}} animate={{opacity:1,y:0}}
-      transition={{duration:0.1,delay:0.1}} 
-      exit={{opacity:0,transition:{duration:0.1}}}
-      >
-         <Link>Saç İşlemleri</Link>
-         <Link>Saç İşlemleri</Link>
-         <Link>Saç İşlemleri</Link>
-         <Link>Saç İşlemleri</Link>
-         <Link>Saç İşlemleri</Link>
+    <motion.div className="desktop-serv-wrapper"> 
+      <motion.div className="desktopLinks">
+         <NavLink to='sac-islemleri' activeclass='active' >Saç İşlemleri</NavLink>
+         <NavLink to='/makyaj-islemleri'>Makyaj İşlemleri</NavLink>
+         <NavLink to='/gelin-saci-ve-makyajı'>Gelin Saçı ve Makyajı</NavLink>
+         <NavLink to='/agda-islemleri'>Ağda İşlemleri</NavLink>
+         <NavLink to='/el-ayak-islemleri'>El & Ayak İşlemleri</NavLink>
+         <NavLink to='/mikro-kaynak'>Mikro Kaynak</NavLink>
+
       </motion.div>
    </motion.div>
   )
