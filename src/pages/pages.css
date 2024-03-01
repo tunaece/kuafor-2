@@ -1,6 +1,6 @@
 .slider{
    background: url(../assets/body-painting-4696539_1280_edited.jpg);
-   @apply h-[calc(100svh-72px)] bg-cover md:bg-center text-white 
+   @apply h-[calc(100svh-80px)] bg-cover md:bg-center text-white 
    flex justify-center items-center
 }
 .landing{
@@ -12,11 +12,12 @@
 .ara{
    transition: .2s;
    @apply inline-flex px-3 py-1 rounded-md text-2xl border items-center
-   border-yellow-200 bg-yellow-500 text-black
-   space-x-1
+   border-yellow-200 text-yellow-300
+   space-x-2
 }
 .ara:hover{
    background-color: rgb(255, 240, 34);
+   color: black;
    scale: 1.07;
 }
 .ara:active{

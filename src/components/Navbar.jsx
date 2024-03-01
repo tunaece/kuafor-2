@@ -58,8 +58,8 @@ return (
          
       </div>
       <div className="hamburger-button" onClick={handleMenuClick}> 
-         {mobileMenu?<IoMdMenu className="hamburger" size={32}/> :
-         <MdClose size={32} className="hamburger"/>} 
+         {mobileMenu?<IoMdMenu className="hamburger" size={42}/> :
+         <MdClose size={42} className="hamburger"/>} 
       </div>
       </div> 
       <AnimatePresence>

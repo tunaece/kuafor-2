@@ -11,7 +11,7 @@
    @apply space-x-4 hidden md:flex
 }
 .theLogo{
-   @apply text-4xl text-yellow-500
+   @apply text-5xl text-yellow-500
 }
 .hamburger-button{
    @apply md:hidden
