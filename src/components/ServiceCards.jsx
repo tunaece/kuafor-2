@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import './comps.css'
 
 const ServiceCards = () => {
    const navigate = useNavigate()
@@ -9,16 +10,16 @@ const ServiceCards = () => {
          link: '/sac-islemleri'
       },
       {
-         title:'EL & AYAK İŞLEMLERİ',
-         link:'/el-ayak-islemleri'
-      },
-      {
          title:'MAKYAJ İŞLEMLERİ',
          link:'/makyaj-islemleri'
       },
       {
          title:'GELİN SAÇI VE MAKYAJI',
          link:'/gelin-saci-ve-makyajı'
+      },
+      {
+         title:'EL & AYAK İŞLEMLERİ',
+         link:'/el-ayak-islemleri'
       },
       {
          title:'MİKRO KAYNAK',

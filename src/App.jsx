@@ -19,7 +19,7 @@ return (
     <Route path="/hakkimizda" element={<About/>} />
     <Route path="/sac-islemleri" element={<Sac/>} />
     <Route path="/el-ayak-islemleri" element={<ElAyak/>} />
-    <Route path="/makyaj-islemeri" element={<Makyaj/>} />
+    <Route path="/makyaj-islemleri" element={<Makyaj/>} />
     <Route path="/agda-islemleri" element={<Agda/>} />
     <Route path="/gelin-saci-ve-makyajı" element={<Gelin/>} />
     <Route path="/mikro-kaynak" element={<Mikro/>} />

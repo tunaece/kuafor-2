@@ -12,11 +12,13 @@ import { Link, NavLink } from 'react-router-dom'
 import './comps.css'
 import { useState, useRef, useEffect } from "react";
 import {AnimatePresence, motion} from 'framer-motion'
+import DesktopServsMenu from "./DesktopServsMenu";
 
 
 const Navbar = () => {
    const [mobileMenu,setMobileMenu]=useState(true)
    const [services,setServices]=useState(false)
+   const [desktopMenu,setDesktopMenu]=useState(false)
    const menuRef = useRef()
    const handleMenuClick=()=>{
       setMobileMenu(!mobileMenu)
@@ -52,9 +54,21 @@ return (
          <Link to='/' onClick={handleLogoClick}>LOGO</Link>
       </div>
 
+      <div className="hidden lg:flex space-x-10 [&>*]:hover:cursor-pointer ">
+            <FaInstagram color="#df9f14" size={35} className="hover:scale-125 transition-all" />
+            <FaTiktok color="#df9f14" size={30} className="hover:scale-125 transition-all"/>
+            <FaYoutube color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
+            <CiFacebook color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
+      </div>
+
       <div className='theMenu'>
          <NavLink to='/' >Ana Sayfa</NavLink>
          <NavLink to='/hakkimizda'>Hakkımızda</NavLink>
+         <button className="desktopServBtn" 
+         onClick={()=>setDesktopMenu(!desktopMenu)}>
+            <span>Hizmetlerimiz</span> 
+         {desktopMenu? <FaChevronUp/> : <FaChevronDown/>} </button>
+
          
       </div>
       <div className="hamburger-button" onClick={handleMenuClick}> 
@@ -86,9 +100,10 @@ return (
                <AnimatePresence>
                {services&&
                <motion.div className="bg-zinc-900" 
-                  initial={{height:0}}
-                  animate={{height:'auto'}}
-                  transition={{duration:0.1,ease:'easeOut'}}
+                  initial={{height:0,borderTop:'none',borderBottom:'none'}}
+                  animate={{height:'auto',borderTop:'1px solid white',
+                  borderBottom:'1px solid white'}}
+                  transition={{duration:0.1,ease:'easeOut'}} 
                   exit={{height:0,
                      transition:{delay:0.1,duration:0.1}}}
                   >
@@ -101,7 +116,7 @@ return (
                   <Link onClick={handleMenuClick} 
                   to='/el-ayak-islemleri' >El & Ayak İşlemleri</Link>
                   <Link onClick={handleMenuClick} 
-                  to='/makyaj-islemeri'>Makyaj İşlemleri</Link>
+                  to='/makyaj-islemleri'>Makyaj İşlemleri</Link>
                   <Link onClick={handleMenuClick} 
                   to='/agda-islemleri'>Ağda İşlemleri</Link>
                   <Link onClick={handleMenuClick} 
@@ -128,7 +143,12 @@ return (
       }
       </AnimatePresence>
    </nav>
-
+   <AnimatePresence>
+   {desktopMenu&& 
+   
+      <DesktopServsMenu /> 
+   }
+   </AnimatePresence>
 </div>
 )
 }

@@ -8,7 +8,7 @@
    text-white z-10
 }
 .theMenu{
-   @apply space-x-4 hidden md:flex
+   @apply space-x-8 hidden md:flex
 }
 .theLogo{
    @apply text-5xl text-yellow-500
@@ -36,7 +36,7 @@
    @apply text-xl
 }
 .serv-wrapper{
-   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
    gap-8 py-8 bg-black px-5
 }
 .servLink{
@@ -47,4 +47,14 @@
 .servLink:hover{background-color: yellow;scale: 1.05;}
 .servLink:active{background-color: #8e8e00;scale: 1.05;}
 
+.desktopServBtn{
+   @apply flex items-center space-x-1
+}
+.desktop-serv-wrapper{
+   @apply absolute bg-gray-950 text-white  w-3/12 text-center
+    py-8 right-0 -z-10 text-2xl pb-10 border border-t-0 border-gray-600 
+}
+.desktopLinks{
+   @apply [&>*]:block space-y-6
+}
 }
