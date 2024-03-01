@@ -103,6 +103,8 @@ return (
                   <Link onClick={handleMenuClick} 
                   to='/makyaj-islemeri'>Makyaj İşlemleri</Link>
                   <Link onClick={handleMenuClick} 
+                  to='/agda-islemleri'>Ağda İşlemleri</Link>
+                  <Link onClick={handleMenuClick} 
                   to='/gelin-saci-ve-makyajı'>Gelin Saçı ve Makyajı</Link>
                   <Link onClick={handleMenuClick} 
                   to='/mikro-kaynak'>Mikro Kaynak</Link>

@@ -1,3 +1,4 @@
+import ServiceCards from '../components/ServiceCards';
 import './pages.css'
 import { FaPhone } from "react-icons/fa";
 
@@ -11,6 +12,7 @@ return(
        <FaPhone size={18}/> </a>
       </div>
     </div>
+    <ServiceCards/>
 </>
 )
 }

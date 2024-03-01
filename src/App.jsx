@@ -6,6 +6,7 @@ import ElAyak from "./pages/servicePages/ElAyak";
 import Makyaj from "./pages/servicePages/Makyaj";
 import Gelin from "./pages/servicePages/Gelin";
 import Mikro from "./pages/servicePages/Mikro";
+import Agda from "./pages/servicePages/Agda"; 
 import About from "./pages/About";
 
 
@@ -19,6 +20,7 @@ return (
     <Route path="/sac-islemleri" element={<Sac/>} />
     <Route path="/el-ayak-islemleri" element={<ElAyak/>} />
     <Route path="/makyaj-islemeri" element={<Makyaj/>} />
+    <Route path="/agda-islemleri" element={<Agda/>} />
     <Route path="/gelin-saci-ve-makyajı" element={<Gelin/>} />
     <Route path="/mikro-kaynak" element={<Mikro/>} />
   </Routes>

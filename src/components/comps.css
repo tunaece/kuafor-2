@@ -27,4 +27,24 @@
    @apply block
 }
 
+.servCard{
+   background: url(../assets/dark-hair.jpg);
+   @apply  text-white py-10 ps-4 md:py-14 md:ps-10
+   space-y-4 rounded-lg border border-gray-700
+}
+.servTitle{
+   @apply text-xl
+}
+.serv-wrapper{
+   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+   gap-8 py-8 bg-black px-5
+}
+.servLink{
+   transition: 0.2s;
+   @apply text-black font-semibold text-lg
+    bg-yellow-500 px-2 py-1 rounded-md
+}
+.servLink:hover{background-color: yellow;scale: 1.05;}
+.servLink:active{background-color: #8e8e00;scale: 1.05;}
+
 }
