@@ -42,7 +42,7 @@ const Navbar = () => {
    useEffect(()=>{
       const handler=(e)=>{
          if(!menuRef.current.contains(e.target)){
-            handleMenuClick()
+            handleHamClick()
          }
       } 
       !mobileMenu&&
