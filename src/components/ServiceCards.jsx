@@ -12,32 +12,32 @@ const ServiceCards = () => {
       {
          title: 'SAÇ İŞLEMLERİ',
          link: '/sac-islemleri',
-         image: 'src/assets/dark-hair.jpg'
+         image: '../assets/dark-hair.jpg'
       },
       {
          title:'MAKYAJ İŞLEMLERİ',
          link:'/makyaj-islemleri',
-         image:'src/assets/makyaj.jpg'
+         image:'../assets/makyaj.jpg'
       },
       {
          title:'GELİN SAÇI VE MAKYAJI',
          link:'/gelin-saci-ve-makyajı',
-         image:'src/assets/bride-hair.jpg'
+         image:'../assets/bride-hair.jpg'
       },
       {
          title:'EL & AYAK İŞLEMLERİ',
          link:'/el-ayak-islemleri',
-         image:'src/assets/protez-tirnak.jpg'
+         image:'../assets/protez-tirnak.jpg'
       },
       {
          title:'MİKRO KAYNAK',
          link:'/mikro-kaynak',
-         image:'src/assets/mikro.jpg'
+         image:'../assets/mikro.jpg'
       },
       {
          title:'AGDA İŞLEMLERİ',
          link:'/agda-islemleri',
-         image:'src/assets/agda.jpg'
+         image:'../assets/agda.jpg'
       }
    ]
 return (
