@@ -1,5 +1,5 @@
 .slider{
-   background: url(../assets/body-painting.jpg);
+   background: url(public/assets/body-painting.jpg);
    @apply h-[calc(100svh-74px)] bg-cover md:bg-center text-white 
    flex justify-center items-center bg-black
 }
@@ -25,7 +25,7 @@
    color: black;
 }
 .about-heading{
-   background: url(../assets/hairdresser.jpg);
+   background: url(public/assets/hairdresser.jpg);
    @apply bg-black bg-cover bg-center flex justify-center text-white 
    text-5xl md:text-6xl py-20 font-semibold lg:py-32 mb-5
 }
@@ -45,12 +45,12 @@
 .serv-text-wrapper{
    @apply w-11/12 ps-2 md:w-8/12 md:mx-auto
 }
-.serv-heading-sac{background: url(../assets/sac-islemleri.jpg);}
-.serv-heading-gelin{background: url(../assets/bride-hair.jpg);}
-.serv-heading-agda{background: url(../assets/agda.jpg);}
-.serv-heading-elayak{background: url(../assets/protez-tirnak.jpg);}
-.serv-heading-makyaj{background: url(../assets/makyaj.jpg);}
-.serv-heading-mikro{background: url(../assets/mikro.jpg);}
+.serv-heading-sac{background: url(public/assets/sac-islemleri.jpg);}
+.serv-heading-gelin{background: url(public/assets/bride-hair.jpg);}
+.serv-heading-agda{background: url(public/assets/agda.jpg);}
+.serv-heading-elayak{background: url(public/assets/protez-tirnak.jpg);}
+.serv-heading-makyaj{background: url(public/assets/makyaj.jpg);}
+.serv-heading-mikro{background: url(public/assets/mikro.jpg);}
 
 .serv-heading{
    @apply text-white text-5xl py-32 bg-cover bg-center 
