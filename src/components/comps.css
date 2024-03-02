@@ -28,7 +28,6 @@
 }
 
 .servCard{
-   background: url(../public/dark-hair.jpg);
    @apply  text-white py-10 ps-4 md:py-14 md:ps-10
    space-y-4 rounded-lg border border-gray-700
 }
