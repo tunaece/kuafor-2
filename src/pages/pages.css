@@ -1,5 +1,5 @@
 .slider{
-   background: url(../assets/body-painting-4696539_1280_edited.jpg);
+   background: url(../assets/body-painting.jpg);
    @apply h-[calc(100svh-80px)] bg-cover md:bg-center text-white 
    flex justify-center items-center
 }
@@ -23,4 +23,23 @@
 .ara:active{
    background-color: rgb(177, 171, 0);
    color: black;
+}
+.about-heading{
+   background: url(../assets/hairdresser.jpg);
+   @apply bg-red-500 bg-cover bg-center flex justify-center text-white 
+   text-5xl md:text-6xl py-20 font-semibold lg:py-32 mb-5
+}
+.heading1{
+   @apply text-4xl my-4
+   font-medium text-yellow-500
+}
+.heading2{
+   @apply text-2xl my-2 text-yellow-700
+}
+.text{
+   @apply text-lg
+}
+.serv-heading{
+   background: url(../assets/sac-islemleri.jpg);
+   @apply 
 }

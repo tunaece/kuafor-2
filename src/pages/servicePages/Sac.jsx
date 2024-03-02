@@ -1,8 +1,12 @@
 
 const Sac = () => {
-  return (
-    <div>Sac</div>
-  )
+return (
+<div>
+  <div className="serv-heading">
+    SAÇ İŞLEMLERİ
+  </div>
+</div>
+)
 }
 
 export default Sac
