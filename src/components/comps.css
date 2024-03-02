@@ -27,7 +27,7 @@
    @apply block
 }
 
-.servCard{
+#servCard{
    @apply  text-white py-10 ps-4 md:py-14 md:ps-10
    space-y-4 rounded-lg border border-gray-700
 }
@@ -73,3 +73,10 @@
    @apply w-full flex justify-center md:items-center 
 }
 }
+
+.sac{background: url(/public/assets/dark-hair.jpg);}
+.makyaj{background: url(/public/assets/makyaj.jpg);}
+.gelin{background: url(/public/assets/bride-hair.jpg);}
+.elayak{background: url(/public/assets/protez-tirnak.jpg);}
+.mikro{background: url(/public/assets/mikro.jpg);}
+.agda{background: url(/public/assets/agda.jpg);}
