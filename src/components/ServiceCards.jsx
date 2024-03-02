@@ -44,7 +44,7 @@ return (
 <div className="serv-wrapper">
 {
    services.map((serv,ix)=>(
-      <div style={{background:`url(${serv.image})`,backgroundPosition:'center'}}
+      <div style={{backgroundImage:`url(${serv.image})`,backgroundPosition:'center'}}
        className="servCard"  key={ix}
       onClick={()=> detayli(serv.link)}>
          <h2 className="servTitle"> {serv.title} </h2>
