@@ -8,6 +8,7 @@ import Gelin from "./pages/servicePages/Gelin";
 import Mikro from "./pages/servicePages/Mikro";
 import Agda from "./pages/servicePages/Agda"; 
 import About from "./pages/About";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -24,6 +25,7 @@ return (
     <Route path="/gelin-saci-ve-makyajı" element={<Gelin/>} />
     <Route path="/mikro-kaynak" element={<Mikro/>} />
   </Routes>
+  <Footer/>
 </>
 )
 }

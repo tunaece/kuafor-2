@@ -4,8 +4,8 @@
 
 @layer components{
 .theNavbar{
-   @apply flex justify-between bg-black p-4 items-center
-   text-white z-10
+   @apply flex justify-between bg-black items-center
+   text-white z-10 md:p-4 ps-4
 }
 .theMenu{
    @apply space-x-8 hidden md:flex
@@ -60,5 +60,17 @@
 }
 .active{
    @apply text-yellow-300
+}
+.footer-media-wrapper{
+   @apply [&>*]:block space-y-1 text-start
+   [&>a]:text-blue-500
+   [&>a:hover]:text-blue-600
+   [&>a:hover]:scale-105
+   [&>a>span]:inline-flex
+   [&>a>span]:items-center
+   [&>a>span]:space-x-1
+}
+.rights-reserved{
+   @apply w-full flex justify-center md:items-center 
 }
 }

@@ -71,10 +71,13 @@ return (
 
          
       </div>
-      <div className="hamburger-button" onClick={handleMenuClick}> 
+   <div className=" h-full p-4 md:hidden"
+   onClick={handleMenuClick}>
+      <div className="hamburger-button" > 
          {mobileMenu?<IoMdMenu className="hamburger" size={42}/> :
          <MdClose size={42} className="hamburger"/>} 
       </div>
+   </div>
       </div> 
       <AnimatePresence>
       {!mobileMenu && 
