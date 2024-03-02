@@ -39,6 +39,20 @@
 .text{
    @apply text-lg
 }
+.serv-page-wrapper{
+   @apply pb-10
+}
+.serv-text-wrapper{
+   @apply w-11/12 ps-2 md:w-8/12 md:mx-auto
+}
+.serv-heading-sac{background: url(../assets/sac-islemleri.jpg);}
+.serv-heading-gelin{background: url(../assets/bride-hair.jpg);}
+.serv-heading-agda{background: url(../assets/agda.jpg);}
+.serv-heading-elayak{background: url(../assets/protez-tirnak.jpg);}
+.serv-heading-makyaj{background: url(../assets/makyaj.jpg);}
+.serv-heading-mikro{background: url(../assets/mikro.jpg);}
+
 .serv-heading{
-   background: url(../assets/sac-islemleri.jpg);
+   @apply text-white text-5xl py-32 bg-cover bg-center 
+   text-center
 }

@@ -3,6 +3,10 @@ import './comps.css'
 
 const ServiceCards = () => {
    const navigate = useNavigate()
+   const detayli=(link)=>{
+      navigate(link)
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant'});
+   }
 
    const services = [
       {
@@ -37,7 +41,7 @@ return (
       <div className="servCard"  key={ix}
       onClick={()=> navigate(serv.link)}>
          <h2 className="servTitle"> {serv.title} </h2>
-         <button onClick={()=>navigate(serv.link)}
+         <button onClick={()=>detayli(serv.link)}
          className="servLink">Detaylı Bilgi</button>
       </div>
    ))

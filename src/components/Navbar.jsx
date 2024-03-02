@@ -20,7 +20,13 @@ const Navbar = () => {
    const [services,setServices]=useState(false)
    const [desktopMenu,setDesktopMenu]=useState(false)
    const menuRef = useRef()
+   const scroll=()=>{window.scrollTo({ top: 0, left: 0, behavior: 'instant'});}
    const handleMenuClick=()=>{
+      setMobileMenu(!mobileMenu)
+      setServices(false)
+      scroll()
+   }
+   const handleHamClick=()=>{
       setMobileMenu(!mobileMenu)
       setServices(false)
    }
@@ -30,8 +36,8 @@ const Navbar = () => {
    const handleLogoClick=()=>{
       setMobileMenu(true)
       setServices(false)
+      scroll()
    }
-
 
    useEffect(()=>{
       const handler=(e)=>{
@@ -50,20 +56,20 @@ return (
 <div className=" sticky top-0" ref={menuRef}>
    <nav className="block bg-black">
       <div className="theNavbar">
+      
+
+      <div className='theLogo'>
+         <NavLink to='/' onClick={handleLogoClick}>LOGO</NavLink>
+      </div>
       <div className="hidden lg:flex space-x-10 [&>*]:hover:cursor-pointer ">
             <FaInstagram color="#df9f14" size={35} className="hover:scale-125 transition-all" />
             <FaTiktok color="#df9f14" size={30} className="hover:scale-125 transition-all"/>
             <FaYoutube color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
             <CiFacebook color="#df9f14" size={35} className="hover:scale-125 transition-all"/>
       </div>
-
-      <div className='theLogo'>
-         <NavLink to='/' onClick={handleLogoClick}>LOGO</NavLink>
-      </div>
-
       <div className='theMenu'>
-         <NavLink to='/' >Ana Sayfa</NavLink>
-         <NavLink to='/hakkimizda'>Hakkımızda</NavLink>
+         <NavLink to='/' onClick={scroll}>Ana Sayfa</NavLink>
+         <NavLink to='/hakkimizda' onClick={scroll}>Hakkımızda</NavLink>
          <button className="desktopServBtn" 
          onClick={()=>setDesktopMenu(!desktopMenu)}>
             <span>Hizmetlerimiz</span> 
@@ -72,7 +78,7 @@ return (
          
       </div>
    <div className=" h-full p-4 md:hidden"
-   onClick={handleMenuClick}>
+   onClick={handleHamClick}>
       <div className="hamburger-button" > 
          {mobileMenu?<IoMdMenu className="hamburger" size={42}/> :
          <MdClose size={42} className="hamburger"/>} 
