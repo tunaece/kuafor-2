@@ -10,7 +10,7 @@ const DesktopServsMenu = () => {
          >Saç İşlemleri</NavLink>
          <NavLink to='/makyaj-islemleri' onClick={scroll}>Makyaj İşlemleri</NavLink>
          <NavLink to='/gelin-saci-ve-makyajı' onClick={scroll}>Gelin Saçı ve Makyajı</NavLink>
-         <NavLink to='/agda-islemleri' onClick={scroll}>Ağda İşlemleri</NavLink>
+         <NavLink to='/bakim-islemleri' onClick={scroll}>Bakım İşlemleri</NavLink>
          <NavLink to='/el-ayak-islemleri' onClick={scroll}>El & Ayak İşlemleri</NavLink>
          <NavLink to='/mikro-kaynak' onClick={scroll}>Mikro Kaynak</NavLink>
 

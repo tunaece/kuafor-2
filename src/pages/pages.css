@@ -1,5 +1,5 @@
 .slider{
-   background: url(/public/assets/body-painting.jpg);
+   background: url(/assets/body-painting.jpg);
    @apply h-[calc(100svh-74px)] bg-cover md:bg-center text-white 
    flex justify-center items-center bg-black
 }
@@ -47,7 +47,7 @@
 }
 .serv-heading-sac{background: url(/public/assets/sac-islemleri.jpg);}
 .serv-heading-gelin{background: url(/public/assets/bride-hair.jpg);}
-.serv-heading-agda{background: url(/public/assets/agda.jpg);}
+.serv-heading-bakim{background: url(/public/assets/bakim.jpg);}
 .serv-heading-elayak{background: url(/public/assets/protez-tirnak.jpg);}
 .serv-heading-makyaj{background: url(/public/assets/makyaj.jpg);}
 .serv-heading-mikro{background: url(/public/assets/mikro.jpg);}

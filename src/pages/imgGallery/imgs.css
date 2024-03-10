@@ -1,0 +1,10 @@
+.imgPage{
+   @apply flex justify-center pb-10 pt-1
+}
+.imgCont{
+   @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-10/12
+}
+.theImg{
+   @apply flex mx-auto w-full rounded-xl hover:cursor-pointer
+   hover:border-2 border-black
+}

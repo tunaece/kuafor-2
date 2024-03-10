@@ -10,13 +10,13 @@ return (
    <div className="footer-media-wrapper">
       <h3 className="mb-3 text-xl">Sosyal Medya</h3>
       <a href=""> <span><FaInstagram/> <span>Instagram</span> </span> </a>
-      <a href=""> <span><FaTiktok/> <span>TİkTok</span> </span> </a>
+      <a href=""> <span><FaTiktok/> <span>TikTok</span> </span> </a>
       <a href=""> <span><FaYoutube/> <span>Youtube</span> </span> </a>
       <a href=""> <span><FaFacebook/> <span>Facebook</span> </span> </a>
       
    </div>
    </div>
-   <div className="rights-reserved">Tüm Hakları Saklıdır. © 2024</div>
+   <div className="rights-reserved">Tüm hakları saklıdır. © 2024</div>
 </div>
 )
 }

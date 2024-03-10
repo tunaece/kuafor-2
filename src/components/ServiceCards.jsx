@@ -35,9 +35,9 @@ const ServiceCards = () => {
          clas:'mikro'
       },
       {
-         title:'AGDA İŞLEMLERİ',
-         link:'/agda-islemleri',
-         clas:'agda'
+         title:'BAKIM İŞLEMLERİ',
+         link:'/bakim-islemleri',
+         clas:'bakim'
       }
    ]
 return (

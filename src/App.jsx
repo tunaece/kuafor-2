@@ -9,6 +9,8 @@ import Mikro from "./pages/servicePages/Mikro";
 import Agda from "./pages/servicePages/Agda"; 
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
+import ImgGallery from "./pages/imgGallery/ImgGallery";
 
 
 function App() {
@@ -16,14 +18,16 @@ return (
 <>
   <Navbar/>
   <Routes>
+    <Route path="*" element={<NotFound/>} />
     <Route path="/" element={<Home/>} />
     <Route path="/hakkimizda" element={<About/>} />
     <Route path="/sac-islemleri" element={<Sac/>} />
     <Route path="/el-ayak-islemleri" element={<ElAyak/>} />
     <Route path="/makyaj-islemleri" element={<Makyaj/>} />
-    <Route path="/agda-islemleri" element={<Agda/>} />
+    <Route path="/bakim-islemleri" element={<Agda/>} />
     <Route path="/gelin-saci-ve-makyajı" element={<Gelin/>} />
     <Route path="/mikro-kaynak" element={<Mikro/>} />
+    <Route path="/gorseller" element={<ImgGallery/>} />
   </Routes>
   <Footer/>
 </>

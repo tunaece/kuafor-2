@@ -70,6 +70,8 @@ return (
       <div className='theMenu'>
          <NavLink to='/' onClick={scroll}>Ana Sayfa</NavLink>
          <NavLink to='/hakkimizda' onClick={scroll}>Hakkımızda</NavLink>
+         <NavLink to='/fiyat-listesi' onClick={scroll}>Fiyat Listesi</NavLink>
+         <NavLink to='/gorseller' onClick={scroll}>Görseller</NavLink>
          <button className="desktopServBtn" 
          onClick={()=>setDesktopMenu(!desktopMenu)}>
             <span>Hizmetlerimiz</span> 
@@ -99,6 +101,9 @@ return (
             <NavLink to='/hakkimizda' className='mobileLinks'
             onClick={handleMenuClick} >
                Hakkımızda</NavLink>
+               <NavLink className='mobileLinks' to='/fiyat-listesi'
+               onClick={handleMenuClick}>
+                  Fiyat Listesi</NavLink>
             <button 
             className="inline-flex items-center space-x-1"
              onClick={handleServices}>
@@ -126,7 +131,7 @@ return (
                   <NavLink onClick={handleMenuClick} 
                   to='/makyaj-islemleri'>Makyaj İşlemleri</NavLink>
                   <NavLink onClick={handleMenuClick} 
-                  to='/agda-islemleri'>Ağda İşlemleri</NavLink>
+                  to='/bakim-islemleri'>Bakım İşlemleri</NavLink>
                   <NavLink onClick={handleMenuClick} 
                   to='/gelin-saci-ve-makyajı'>Gelin Saçı ve Makyajı</NavLink>
                   <NavLink onClick={handleMenuClick} 

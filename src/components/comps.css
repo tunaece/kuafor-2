@@ -26,12 +26,12 @@
 .mobileLinks{
    @apply block
 }
-.sac{background: url(/public/assets/dark-hair.jpg);}
-.makyaj{background: url(/public/assets/makyaj.jpg);}
-.gelin{background: url(/public/assets/bride-hair.jpg);}
-.elayak{background: url(/public/assets/protez-tirnak.jpg);}
-.mikro{background: url(/public/assets/mikro.jpg);}
-.agda{background: url(/public/assets/agda.jpg);}
+.sac{background: url(/assets/dark-hair.jpg);}
+.makyaj{background: url(/assets/makyaj.jpg);}
+.gelin{background: url(/assets/bride-hair.jpg);}
+.elayak{background: url(/assets/protez-tirnak.jpg);}
+.mikro{background: url(/assets/mikro.jpg);}
+.bakim{background: url(/assets/bakim.jpg);}
 
 #servCard{
    @apply  text-white py-10 ps-4 md:py-14 md:ps-10
