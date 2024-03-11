@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import ImgGallery from "./pages/imgGallery/ImgGallery";
+import PriceList from "./pages/PriceList";
 
 
 function App() {
@@ -28,6 +29,7 @@ return (
     <Route path="/gelin-saci-ve-makyajı" element={<Gelin/>} />
     <Route path="/mikro-kaynak" element={<Mikro/>} />
     <Route path="/gorseller" element={<ImgGallery/>} />
+    {/* <Route path="/fiyat-listesi" element={<PriceList/>} /> */}
   </Routes>
   <Footer/>
 </>
