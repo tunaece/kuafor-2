@@ -15,7 +15,7 @@ table {
    @apply w-full md:w-10/12 lg:w-9/12
 }
 tbody{
-   @apply bg-gray-200
+   @apply bg-[#fffeed]
 }
 thead th {
    @apply bg-black text-white text-center py-2 border-e
