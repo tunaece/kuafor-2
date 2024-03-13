@@ -3,7 +3,7 @@ const Agda = () => {
 return (
 <div className='serv-page-wrapper'>
   <div className="serv-heading serv-heading-bakim">
-  Bakım İŞLEMLERİ
+  BAKIM İŞLEMLERİ
   </div>
   <div className='serv-text-wrapper'>
     <h1 className="heading1">Başlık 1</h1>

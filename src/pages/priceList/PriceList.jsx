@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import BakimFiyat from "./priceComponents/BakimFiyat"
 import ElAyakFiyat from "./priceComponents/ElAyakFiyat"
 import MakyajFiyat from "./priceComponents/MakyajFiyat"
@@ -10,6 +11,12 @@ const PriceList = () => {
       <ElAyakFiyat/>
       <BakimFiyat/>
       <MakyajFiyat/>
+      <div className="gelinDetaylı">
+        <h1 className="fiyatGelinH1">Gelin Saçı ve Makyajı</h1>
+        <NavLink to='/gelin-saci-ve-makyajı' 
+        onClick={()=>window.scrollTo({ top: 0, left: 0, behavior: 'instant'})}
+         className="gelinDetaylıBtn">Detaylı Bilgi</NavLink>
+      </div>
     </div>
   )
 }

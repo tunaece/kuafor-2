@@ -24,3 +24,13 @@ thead th {
 tbody td {
    @apply border border-[#c3c3c3] py-3 px-1 text-center
 }
+.gelinDetaylı{
+   @apply text-center
+}
+.fiyatGelinH1{
+   @apply text-3xl mb-8
+}
+.gelinDetaylıBtn{
+   @apply bg-black text-white px-3 py-2 text-lg rounded-md
+   hover:bg-slate-800
+}

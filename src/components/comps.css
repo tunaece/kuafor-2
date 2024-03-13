@@ -21,7 +21,7 @@
 }
 .mobileMenu{
    @apply py-2 pb-10 bg-black text-white text-center  
-    w-full absolute -z-10 text-lg md:hidden
+    w-full absolute -z-10 text-lg md:hidden h-[calc(100svh-74px)] overflow-scroll
 }
 .mobileLinks{
    @apply block
@@ -78,4 +78,28 @@
 .rights-reserved{
    @apply w-full flex justify-center md:items-center 
 }
+
+.gelinpaket-wrapper{
+   @apply pt-10 flex justify-center
+}
+.card-wrapper{
+   @apply py-6 md:px-10 mx-auto
+   w-11/12 md:w-8/12 lg:w-6/12
+}
+.paketh1{
+   @apply text-4xl pb-3 text-center
+}
+.paketh2{
+   @apply text-3xl flex items-center space-x-2
+}
+.paketFiyat{
+   @apply text-lg py-1
+}
+.paketCard{
+   @apply bg-gray-200 grid-cols-3 p-2 ps-10 mb-8 rounded-xl
+}
+.paket-ul{
+   @apply list-disc 
+}
+
 }
