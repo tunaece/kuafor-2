@@ -104,6 +104,10 @@ return (
                <NavLink className='mobileLinks' to='/fiyat-listesi'
                onClick={handleMenuClick}>
                   Fiyat Listesi</NavLink>
+               <NavLink className='mobileLinks' to='/gorseller'
+               onClick={handleMenuClick}>
+                  Görseller</NavLink>
+               
             <button 
             className="inline-flex items-center space-x-1"
              onClick={handleServices}>
