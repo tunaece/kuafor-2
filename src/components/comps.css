@@ -21,7 +21,7 @@
 }
 .mobileMenu{
    @apply py-2 pb-10 bg-black text-white text-center  
-    w-full absolute -z-10 text-lg md:hidden h-[calc(100svh-74px)] overflow-scroll
+    w-full absolute -z-10 text-lg md:hidden overflow-scroll
 }
 .mobileLinks{
    @apply block
